@@ -9,10 +9,9 @@ import com.hcl.Irctc.model.User;
 @Service
 public interface UserService {
 	
-	public User getUserById(Integer userid);
-	
-	boolean saveUserDetails(UserDto userDto);
+	public ResponseEntity<?> userLogin(String userName);
 
-	 ResponseEntity<String> authenticate(String username, String password);
+
+	public ResponseEntity<String> otp(int userId,long otp);
 
 }

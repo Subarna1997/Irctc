@@ -11,8 +11,11 @@ import com.hcl.Irctc.model.User;
 @Repository
 public interface UserDao extends JpaRepository<User,Integer> {
 	
-	User findByUserNameAndPassword(String userName, String password);
+	public User findByUserName(String userName);
 
-	// User findByUserId(int userId);
-
+	 public User findByUserId(int userId );
+	 
+	 
+	 
+	 
 }

@@ -48,6 +48,12 @@ public class Booking {
 
 	
 
+	public Booking() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 	public double getTotal_price() {
 		return total_price;
 	}

@@ -40,20 +40,23 @@ public class Train {
 	@Column(length=20)
 	@Enumerated(EnumType.STRING)
 	@ElementCollection
-	private List<Days> day;
+	private List<Days> days;
 	
 
 	
 	
 	
 
-	public List<Days> getDay() {
-		return day;
+	
+	public List<Days> getDays() {
+		return days;
 	}
 
-	public void setDay(List<Days> day) {
-		this.day = day;
+	public void setDays(List<Days> days) {
+		this.days = days;
 	}
+
+
 
 	public int getTrainid() {
 		return trainid;

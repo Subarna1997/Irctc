@@ -15,10 +15,10 @@ public class Passenger {
 	private String name;
 	
 	@Column(length=10)
-	private String age;
+	private int age;
 	
-	@Column(length=16)
-	private int adhaardetails;
+	@Column(length=50)
+	private String adhaardetails;
 	
 	@Column(length=50)
 	private String address;
@@ -33,19 +33,23 @@ public class Passenger {
 		this.name = name;
 	}
 
-	public String getAge() {
+	
+
+	public int getAge() {
 		return age;
 	}
 
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
-	public int getAdhaardetails() {
+	
+
+	public String getAdhaardetails() {
 		return adhaardetails;
 	}
 
-	public void setAdhaardetails(int adhaardetails) {
+	public void setAdhaardetails(String adhaardetails) {
 		this.adhaardetails = adhaardetails;
 	}
 
